@@ -1,0 +1,67 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 120px; }
+
+header {
+  background-color: #F5F5F5; }
+  header div.header-row {
+    padding-top: 10px; }
+
+p {
+  font-size: 1.8rem; }
+
+section.intro {
+  background-color: #1DE9B6; }
+  section.intro a.btn-default.btn-header {
+    background-color: #1DE9B6;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 3rem;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    width: 100%;
+    height: 12rem;
+    margin-bottom: 20px; }
+    section.intro a.btn-default.btn-header:focus, section.intro a.btn-default.btn-header:unvisited, section.intro a.btn-default.btn-header:visited {
+      background-color: #1DE9B6;
+      color: #000000; }
+    section.intro a.btn-default.btn-header:hover {
+      background-color: #64FFDA;
+      color: #000000;
+      border: 1px solid #000000; }
+    section.intro a.btn-default.btn-header:active {
+      background-color: #1DE9B6;
+      color: #000000; }
+    section.intro a.btn-default.btn-header span {
+      display: block;
+      height: 4rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem; }
+
+section.universe {
+  background-color: #FF9800; }
+
+section.films {
+  background-color: #F44336; }
+  section.films h1 {
+    text-align: right; }
+
+section.youtube {
+  background-color: #00BCD4; }
+
+footer {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #000000;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer p {
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */

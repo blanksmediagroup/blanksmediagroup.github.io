@@ -1,0 +1,86 @@
+// Colour Variables
+$white: #FFFFFF;
+$black: #000000;
+
+// Standard CSS components
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    margin-bottom: 120px;
+}
+header{
+    background-color: #F5F5F5;
+    div.header-row{
+        padding-top: 10px;
+    }    
+} 
+p{
+    font-size: 1.8rem;
+}
+section.intro{
+    //Variables for link height
+    $linkHeight: 12rem;
+    $introBack: #1DE9B6;
+    background-color: $introBack;
+
+    a.btn-default.btn-header{
+        background-color: $introBack;
+        color: $black;
+        border: 1px solid $black;
+        font-size: $linkHeight/4; 
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+        width: 100%;
+        height: $linkHeight;
+        margin-bottom: 20px;
+
+        &:focus, &:unvisited, &:visited{
+            background-color: $introBack;
+            color: $black;
+        }
+        &:hover{
+            background-color: #64FFDA;
+            color: $black;
+            border: 1px solid $black;
+        }
+        &:active{
+            background-color: $introBack;
+            color: $black; 
+        }
+        span{
+            display: block;
+            height: $linkHeight/3;
+            margin-top: $linkHeight/3;
+            margin-bottom: $linkHeight/3;
+        }
+    }
+}
+section.universe{
+    background-color: #FF9800;
+}
+section.films{
+    background-color: #F44336;
+    h1{
+        text-align: right;
+    }
+}
+section.youtube{
+    background-color: #00BCD4;
+}
+
+footer{
+    color: $white;
+    text-align: center;
+    background-color: #000000;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    p{
+        margin-bottom: 0;
+    }
+}
