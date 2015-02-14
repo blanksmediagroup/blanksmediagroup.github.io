@@ -1,4 +1,4 @@
-MediaGroup
+BlanksMediaGroup
 ==========
 The [blank]'s Media Group landing page. 
 

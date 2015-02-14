@@ -14,9 +14,9 @@ p {
   font-size: 1.8rem; }
 
 section.intro {
-  background-color: #1DE9B6; }
+  background-color: #A2FAA3; }
   section.intro a.btn-default.btn-header {
-    background-color: #1DE9B6;
+    background-color: #A2FAA3;
     color: #000000;
     border: 1px solid #000000;
     font-size: 3rem;
@@ -27,14 +27,14 @@ section.intro {
     height: 12rem;
     margin-bottom: 20px; }
     section.intro a.btn-default.btn-header:focus, section.intro a.btn-default.btn-header:unvisited, section.intro a.btn-default.btn-header:visited {
-      background-color: #1DE9B6;
+      background-color: #A2FAA3;
       color: #000000; }
     section.intro a.btn-default.btn-header:hover {
-      background-color: #64FFDA;
+      background-color: #7FEFA0;
       color: #000000;
       border: 1px solid #000000; }
     section.intro a.btn-default.btn-header:active {
-      background-color: #1DE9B6;
+      background-color: #A2FAA3;
       color: #000000; }
     section.intro a.btn-default.btn-header span {
       display: block;
@@ -42,21 +42,28 @@ section.intro {
       margin-top: 4rem;
       margin-bottom: 4rem; }
 
+section .row .col-md-10 {
+  padding-top: 20px; }
+  section .row .col-md-10 h1 {
+    padding-bottom: 10px; }
+  section .row .col-md-10 p:last-child {
+    padding-bottom: 20px; }
+
 section.universe {
-  background-color: #FF9800; }
+  background-color: #DDE392; }
 
 section.films {
-  background-color: #F44336; }
+  background-color: #E6C79C; }
   section.films h1 {
     text-align: right; }
 
 section.youtube {
-  background-color: #00BCD4; }
+  background-color: #92C9B1; }
 
 footer {
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
-  background-color: #000000;
+  background-color: #F5F5F5;
   height: 120px;
   position: absolute;
   bottom: 0;
