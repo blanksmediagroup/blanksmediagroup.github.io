@@ -22,6 +22,9 @@ header {
       text-align: center;
       font-size: 7rem;
       margin-top: 0; }
+      @media (max-width: 900px) {
+        header div.header-row h1 {
+          font-size: 4rem; } }
 
 p {
   font-size: 2rem;
@@ -45,7 +48,10 @@ section.all-content {
     font-family: 'Open Sans', sans-serif; }
   section.all-content h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 40px; }
+    font-size: 3.5rem; }
+    @media (max-width: 900px) {
+      section.all-content h2 {
+        font-size: 3rem; } }
   section.all-content a {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -53,7 +59,7 @@ section.all-content {
     border: 1px solid #000000;
     display: inline-block;
     border-radius: 4px;
-    font-size: 30px;
+    font-size: 2.5rem;
     font-family: 'Open Sans', sans-serif;
     color: #000000;
     text-decoration: none;
