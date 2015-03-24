@@ -1,6 +1,22 @@
-// Colour Variables
-$white: #FFFFFF;
-$black: #000000;
+@font-face {
+    font-family: 'geometria_light';
+    src: url('../font/Geometria-Light-webfont.eot');
+    src: url('../font/Geometria-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Geometria-Light-webfont.woff2') format('woff2'),
+         url('../font/Geometria-Light-webfont.woff') format('woff'),
+         url('../font/Geometria-Light-webfont.ttf') format('truetype'),
+         url('../font/Geometria-Light-webfont.svg#geometria_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin transition ($transition){
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+}
 
 // Standard CSS components
 html {
@@ -9,88 +25,115 @@ html {
 }
 
 body{
-    margin-bottom: 120px;
+    margin-bottom: 200px;
 }
+
+
+// Colour Variables
+$white: #FFFFFF;
+$black: #000000;
+$darkGrey: #616161;
+$Grey: #BDBDBD;
+$lightGrey: #F5F5F5;
+
+$headerFooterColour: #90A4AE;
+$mainBackgroundColour: $lightGrey;
+$OpenSans: 'Open Sans', sans-serif;
+$GeometriaLight: 'geometria_light', $OpenSans;
+
+
 header{
-    background-color: #F5F5F5;
+    background-color: $headerFooterColour;
+    padding-bottom: 40px;
     div.header-row{
         padding-top: 10px;
+        h1{
+            font-family: $GeometriaLight;
+            text-align: center;
+            font-size: 7rem;
+            margin-top: 0;
+        }
     }    
 } 
 p{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-family: $GeometriaLight;
 }
-section.intro{
-    //Variables for link height
-    $linkHeight: 12rem;
-    $introBack: #A2FAA3;
-    background-color: $introBack;
 
-    a.btn-default.btn-header{
-        background-color: $introBack;
-        color: $black;
-        border: 1px solid $black;
-        font-size: $linkHeight/4; 
-        padding: 0;
-        border-radius: 0;
-        text-align: center;
-        width: 100%;
-        height: $linkHeight;
+img.img-responsive{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.all-content{
+    background-color: $mainBackgroundColour;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    p{
+        text-align: left;
+        font-family: $OpenSans;
+    }
+    h2{
+        font-family: $OpenSans;
+        font-size: 40px;
+    }
+    a{
+        margin-top: 20px;
         margin-bottom: 20px;
-
-        &:focus, &:unvisited, &:visited{
-            background-color: $introBack;
-            color: $black;
-        }
+        padding: 20px 40px 20px 40px;
+        border: 1px solid $black;
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 30px;
+        font-family: $OpenSans;
+        color: $black;
+        text-decoration: none;
+        @include transition(all 0.5s ease);
+        cursor: pointer;
         &:hover{
-            background-color: #7FEFA0;
-            color: $black;
-            border: 1px solid $black;
-        }
-        &:active{
-            background-color: $introBack;
-            color: $black; 
-        }
-        span{
-            display: block;
-            height: $linkHeight/3;
-            margin-top: $linkHeight/3;
-            margin-bottom: $linkHeight/3;
+            background-color: $darkGrey;
+            color: $white;
         }
     }
-}
-
-section .row .col-md-10{
-    padding-top: 20px;
-    h1{
-        padding-bottom: 10px;
+    img.img-responsive{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    p:last-child{
-        padding-bottom: 20px;
-    }
-}
-section.universe{
-    background-color: #DDE392;
-}
-section.films{
-    background-color: #E6C79C;
-    h1{
-        text-align: right;
-    }
-}
-section.youtube{
-    background-color: #92C9B1;
 }
 
 footer{
+    font-family: $OpenSans;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: $black;
     text-align: center;
-    background-color: #F5F5F5;
-    height: 120px;
+    background-color: $headerFooterColour;
+    height: 200px;
     position: absolute;
     bottom: 0;
     width: 100%;
     p{
         margin-bottom: 0;
+    }
+    a{
+        @include transition(all 0.25s ease);
+        color: $black;
+        &:hover{
+            color: $darkGrey;
+        }
+    }
+    a.ext{
+        font-weight: bold;
+        font-family: $GeometriaLight;
+        font-size: 20px;
+        text-decoration: none;
+        &:hover{
+            color: $darkGrey;
+        }
     }
 }
