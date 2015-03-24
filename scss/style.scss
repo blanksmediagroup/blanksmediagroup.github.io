@@ -29,7 +29,20 @@ body{
     margin-bottom: 200px;
 }
 
-
+.mobile-only{
+    display: none;
+}
+.desktop-only{
+    display: inline-block;
+}
+@media (max-width: 900px){
+    .mobile-only{
+        display: block;
+    }
+    .desktop-only{
+        display: none;
+    }
+}
 // Colour Variables
 $white: #FFFFFF;
 $black: #000000;

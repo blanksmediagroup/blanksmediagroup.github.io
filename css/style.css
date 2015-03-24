@@ -13,6 +13,20 @@ html {
 body {
   margin-bottom: 200px; }
 
+.mobile-only {
+  display: none; }
+
+.desktop-only {
+  display: inline-block; }
+
+@media (max-width: 900px) {
+  .mobile-only {
+    display: block; }
+
+  .desktop-only {
+    display: none; }
+ }
+
 header {
   background-color: #90A4AE;
   padding-bottom: 40px; }
