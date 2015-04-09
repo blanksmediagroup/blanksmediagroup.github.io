@@ -11,7 +11,7 @@ html {
   width: 100%; }
 
 body {
-  margin-bottom: 200px; }
+  margin-bottom: 220px; }
 
 .mobile-only {
   display: none; }
@@ -19,13 +19,18 @@ body {
 .desktop-only {
   display: inline-block; }
 
+@media (min-width: 900px) {
+  .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px; } }
+
 @media (max-width: 900px) {
+  .row {
+    margin: 0; }
   .mobile-only {
     display: block; }
-
   .desktop-only {
-    display: none; }
- }
+    display: none; } }
 
 header {
   background-color: #90A4AE;
@@ -69,7 +74,7 @@ section.all-content {
     @media (max-width: 900px) {
       section.all-content h2 {
         font-size: 3rem; } }
-  section.all-content a {
+  section.all-content a.button {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 40px 20px 40px;
@@ -85,7 +90,7 @@ section.all-content {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     cursor: pointer; }
-    section.all-content a:hover {
+    section.all-content a.button:hover {
       background-color: #616161;
       color: #FFFFFF; }
   section.all-content img.img-responsive {
@@ -94,12 +99,12 @@ section.all-content {
 
 footer {
   font-family: 'Open Sans', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   color: #000000;
   text-align: center;
   background-color: #90A4AE;
-  height: 200px;
+  height: 220px;
   position: absolute;
   bottom: 0;
   width: 100%; }
