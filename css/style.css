@@ -33,7 +33,7 @@ body {
     display: none; } }
 
 header {
-  background-color: #90A4AE;
+  background-color: #acacac;
   padding-bottom: 40px; }
   header div.header-row {
     padding-top: 10px; }
@@ -103,7 +103,7 @@ footer {
   padding-bottom: 30px;
   color: #000000;
   text-align: center;
-  background-color: #90A4AE;
+  background-color: #acacac;
   height: 220px;
   position: absolute;
   bottom: 0;
