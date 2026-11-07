@@ -28,14 +28,14 @@
                 <div class="col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
                     <h2>[blank]'s Universe</h2>
                     <a href="http://blanksuniverse.ca"><img src="img/universe.jpeg" class="img-responsive content"></a>
-                    <p>[blank]'s Universe reports on the latest in the technology and gaming industries, alongside product reviews and unboxings.</p>
+                    <p>[blank]'s Universe reports on the technology and gaming industries, alongside product reviews and unboxings.</p>
                     <a href="http://blanksuniverse.ca" class="button">[blank]'s Universe</a>
                 </div>
 
                 <div class="col-md-5 col-xs-10 col-xs-offset-1 col-md-offset-0">
                     <h2>[blank]'s Films</h2>
                     <a href="http://films.blanksuniverse.ca"><img src="img/bh6.png" class="img-responsive content"></a>
-                    <p>[blank]'s Films is the latest division of the group, providing film reviews that range anywhere from indie shorts to Hollywood blockbusters.</p>
+                    <p>[blank]'s Films provides film reviews that range anywhere from indie shorts to Hollywood blockbusters.</p>
                     <a href="http://films.blanksuniverse.ca" class="button">[blank]'s Films</a>
                 </div>
             </div>
@@ -52,13 +52,18 @@
                     <h2>Blank's Media Group</h2>
                 </div>
                 <div class="row">
-                    <p>Copyright 2015-2016</p>
-                    <a href="http://deonhua.me" class="ext">Made with love.</a>
+                    <p>Copyright 2015-<span id="year"></span></p>
+                    <a href="https://www.blanksuniverse.ca" class="ext">Made with love.</a>
                 </div>
             </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript">  
+          window.onload = function(){  
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+          }
+        </script>
     </body>
 </html>
